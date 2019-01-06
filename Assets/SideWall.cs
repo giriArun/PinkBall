@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SideWall : MonoBehaviour {
 
+    public AudioSource audioPlay;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -20,7 +22,7 @@ public class SideWall : MonoBehaviour {
         {
             string WallName = transform.name;
             GameManeger.Score(WallName);
-            Debug.Log(WallName);
+            audioPlay.Play();
             FindObjectOfType<BallControl>().ResetBall();
         }
     }

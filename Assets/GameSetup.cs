@@ -32,8 +32,9 @@ public class GameSetup : MonoBehaviour {
 	void Update () {
 
         WallPosition();
+        FoulPosition();
 
-	}
+    }
 
     void WallPosition()     //Hidden Game Boundary Create
     {
@@ -51,7 +52,7 @@ public class GameSetup : MonoBehaviour {
         RightWall.size = new Vector2(1f, camera2D.ScreenToWorldPoint(new Vector3(0f, Screen.height * 2f, 0f)).y);
     }
 
-    void PlayerPosition()       // Player fixed position on start
+    public void PlayerPosition()       // Player fixed position on start
     {
         TFP1.position = new Vector2(camera2D.ScreenToWorldPoint(new Vector3(40f, 0f, 0f)).x, 0f);
         TFP2.position = new Vector2(camera2D.ScreenToWorldPoint(new Vector3(Screen.width - 85f, 0f, 0f)).x, 0f);

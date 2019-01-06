@@ -5,10 +5,12 @@ using UnityEngine;
 public class BallControl : MonoBehaviour {
 
     public Rigidbody2D RBBall;
+    public AudioSource audioPlay;
 
 	// Use this for initialization
 	void Start () {
-        GoBall();
+
+        Invoke("GoBall", 3f);
 	}
 	
 	// Update is called once per frame
@@ -60,6 +62,9 @@ public class BallControl : MonoBehaviour {
             {
                 RBBall.velocity = new Vector2(RBBall.velocity.x * 1.1f, valY);
             }
+
+            audioPlay.pitch = Random.Range(0.8f, 1.2f);
+            audioPlay.Play();
         }
     }
 
@@ -68,6 +73,8 @@ public class BallControl : MonoBehaviour {
         RBBall.velocity = new Vector2(0, 0);
         RBBall.position = new Vector3(0, 0, 0);
         RBBall.velocity = new Vector2(0, 0);
+
+        FindObjectOfType<GameSetup>().PlayerPosition();
 
         Invoke("GoBall", 1.5f);
     }
