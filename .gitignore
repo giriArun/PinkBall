@@ -3,3 +3,5 @@
 *PinkBall.sln
 *ProjectSettings/
 *Temp/
+*.vs/
+*obj/
