@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManeger : MonoBehaviour {
 
@@ -13,6 +14,8 @@ public class GameManeger : MonoBehaviour {
     public Texture PlayTexture;
     public Texture PauseTexture;
     public Texture StopTexture;
+
+    public Camera Camera2D;
 
 
 	// Use this for initialization
@@ -57,7 +60,7 @@ public class GameManeger : MonoBehaviour {
 
             GUI.skin = PlayPause;
 
-            if (GUI.Button(new Rect(10, 10, 40, 40), PauseTexture))
+            if (GUI.Button(new Rect(Screen.width / 2 - 25, Screen.height - 60, 60, 60), PauseTexture))
             {
                 ShowHide = false;
                 Time.timeScale = 0;
@@ -67,15 +70,18 @@ public class GameManeger : MonoBehaviour {
         {
             GUI.skin = PlayPause;
 
-            if (GUI.Button(new Rect(10, 10, 40, 40), PlayTexture))
+            if (GUI.Button(new Rect(Screen.width / 2, Screen.height - 60, 60, 60), PlayTexture))
             {
                 ShowHide = true;
                 Time.timeScale = 1;
             }
 
-            if (GUI.Button(new Rect(45, 10, 40, 40), StopTexture))
+            if (GUI.Button(new Rect(Screen.width / 2 - 60, Screen.height - 60, 60, 60), StopTexture))
             {
-                Debug.Log("exit game");
+                SceneManager.LoadScene("Menu", LoadSceneMode.Single);
+                Time.timeScale = 1;
+                PlayerScore_1 = 0;
+                PlayerScore_2 = 0;
             }
         }
     }

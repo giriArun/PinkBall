@@ -425,6 +425,7 @@ MonoBehaviour:
   PlayTexture: {fileID: 2800000, guid: 3c0a73e62816c7b49b4b2ee720a15ce0, type: 3}
   PauseTexture: {fileID: 2800000, guid: 0214abe2879d65844b7a556d6b1af577, type: 3}
   StopTexture: {fileID: 2800000, guid: 7122ff413d944f44cad7d064664e4c8b, type: 3}
+  Camera2D: {fileID: 1081925711}
 --- !u!82 &277138929
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1580,7 +1581,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 835bd2a87d99904428df5880e875d182, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

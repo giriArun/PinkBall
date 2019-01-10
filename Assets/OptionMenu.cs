@@ -1,15 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Audio;
 
 public class OptionMenu : MonoBehaviour {
 
     public static int DropValue = 0;
     public AudioMixer AudioMix;
-	// Use this for initialization
-	void Start () {
-		
+
+    // Use this for initialization
+    void Start () {
+        
 	}
 	
 	// Update is called once per frame
@@ -24,7 +23,6 @@ public class OptionMenu : MonoBehaviour {
 
     public void SetVolume(float volume)
     {
-        Debug.Log(volume);
         AudioMix.SetFloat("Volume", volume);
     }
 }
