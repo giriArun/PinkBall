@@ -1,8 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Audio;
-using UnityEngine.UI;
 
 public class OptionMenu : MonoBehaviour {
 
@@ -22,12 +19,10 @@ public class OptionMenu : MonoBehaviour {
     public void DropDown_Change(int index)
     {
         DropValue = index;
-        Debug.Log(index);
     }
 
     public void SetVolume(float volume)
     {
-        Debug.Log(volume);
         AudioMix.SetFloat("Volume", volume);
     }
 }

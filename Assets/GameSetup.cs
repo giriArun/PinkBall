@@ -74,29 +74,29 @@ public class GameSetup : MonoBehaviour {
     {
         if (OptionMenu.DropValue == 1)      //Left and Right Hand
         {
-            TFP1.position = new Vector2(camera2D.ScreenToWorldPoint(new Vector3(85f, 0f, 0f)).x, 0f);
-            TFP2.position = new Vector2(camera2D.ScreenToWorldPoint(new Vector3(Screen.width - 85f, 0f, 0f)).x, 0f);
+            TFP1.position = new Vector2(camera2D.ScreenToWorldPoint(new Vector3(250f, 0f, 0f)).x, 0f);
+            TFP2.position = new Vector2(camera2D.ScreenToWorldPoint(new Vector3(Screen.width - 250f, 0f, 0f)).x, 0f);
             TFSlider.position = new Vector2(camera2D.ScreenToWorldPoint(new Vector3(0f, 0f, 0f)).x + 0.5f, 0f);
             TFSlider2.position = new Vector2(camera2D.ScreenToWorldPoint(new Vector3(Screen.width, 0f, 0f)).x - 0.5f, 0f);
         }
         else if (OptionMenu.DropValue == 2)     //Left Hand
         {
-            TFP1.position = new Vector2(camera2D.ScreenToWorldPoint(new Vector3(85f, 0f, 0f)).x, 0f);
-            TFP2.position = new Vector2(camera2D.ScreenToWorldPoint(new Vector3(Screen.width - 40f, 0f, 0f)).x, 0f);
+            TFP1.position = new Vector2(camera2D.ScreenToWorldPoint(new Vector3(250f, 0f, 0f)).x, 0f);
+            TFP2.position = new Vector2(camera2D.ScreenToWorldPoint(new Vector3(Screen.width - 100f, 0f, 0f)).x, 0f);
             TFSlider.position = new Vector2(camera2D.ScreenToWorldPoint(new Vector3(0f, 0f, 0f)).x + 0.5f, 0f);
             TFSlider2.position = new Vector2(camera2D.ScreenToWorldPoint(new Vector3(Screen.width, 0f, 0f)).x + 1f, 0f);
         }
         else if (OptionMenu.DropValue == 3)     //Right Hand
         {
-            TFP1.position = new Vector2(camera2D.ScreenToWorldPoint(new Vector3(40f, 0f, 0f)).x, 0f);
-            TFP2.position = new Vector2(camera2D.ScreenToWorldPoint(new Vector3(Screen.width - 85f, 0f, 0f)).x, 0f);
+            TFP1.position = new Vector2(camera2D.ScreenToWorldPoint(new Vector3(100f, 0f, 0f)).x, 0f);
+            TFP2.position = new Vector2(camera2D.ScreenToWorldPoint(new Vector3(Screen.width - 250f, 0f, 0f)).x, 0f);
             TFSlider.position = new Vector2(camera2D.ScreenToWorldPoint(new Vector3(0f, 0f, 0f)).x - 1f, 0f);
             TFSlider2.position = new Vector2(camera2D.ScreenToWorldPoint(new Vector3(Screen.width, 0f, 0f)).x - 0.5f, 0f);
         }
         else        //By default condition
         {
-            TFP1.position = new Vector2(camera2D.ScreenToWorldPoint(new Vector3(85f, 0f, 0f)).x, 0f);
-            TFP2.position = new Vector2(camera2D.ScreenToWorldPoint(new Vector3(Screen.width - 85f, 0f, 0f)).x, 0f);
+            TFP1.position = new Vector2(camera2D.ScreenToWorldPoint(new Vector3(250f, 0f, 0f)).x, 0f);
+            TFP2.position = new Vector2(camera2D.ScreenToWorldPoint(new Vector3(Screen.width - 250f, 0f, 0f)).x, 0f);
             TFSlider.position = new Vector2(camera2D.ScreenToWorldPoint(new Vector3(0f, 0f, 0f)).x + 0.5f, 0f);
             TFSlider2.position = new Vector2(camera2D.ScreenToWorldPoint(new Vector3(Screen.width, 0f, 0f)).x - 0.5f, 0f);
         }

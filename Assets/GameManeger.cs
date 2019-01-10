@@ -60,7 +60,7 @@ public class GameManeger : MonoBehaviour {
 
             GUI.skin = PlayPause;
 
-            if (GUI.Button(new Rect(Screen.width / 2 - 25, Screen.height - 50, 40, 40), PauseTexture))
+            if (GUI.Button(new Rect(Screen.width / 2 - 25, Screen.height - 60, 60, 60), PauseTexture))
             {
                 ShowHide = false;
                 Time.timeScale = 0;
@@ -70,13 +70,13 @@ public class GameManeger : MonoBehaviour {
         {
             GUI.skin = PlayPause;
 
-            if (GUI.Button(new Rect(Screen.width / 2, Screen.height - 50, 40, 40), PlayTexture))
+            if (GUI.Button(new Rect(Screen.width / 2, Screen.height - 60, 60, 60), PlayTexture))
             {
                 ShowHide = true;
                 Time.timeScale = 1;
             }
 
-            if (GUI.Button(new Rect(Screen.width / 2 - 50, Screen.height - 50, 40, 40), StopTexture))
+            if (GUI.Button(new Rect(Screen.width / 2 - 60, Screen.height - 60, 60, 60), StopTexture))
             {
                 SceneManager.LoadScene("Menu", LoadSceneMode.Single);
                 Time.timeScale = 1;
