@@ -25,7 +25,7 @@ public class PlayerControl : MonoBehaviour {
         {
             RB2D.velocity = new Vector2(0, -Speed);
         }
-        else if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved)
+        else if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved && (OptionMenu.DropValue == 2 || OptionMenu.DropValue == 3))
         {
             Vector2 TouchDetailPosition = Input.GetTouch(0).deltaPosition;
             RB2D.velocity = new Vector2(0, TouchDetailPosition.y);

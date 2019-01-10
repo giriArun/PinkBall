@@ -18,25 +18,7 @@ public class MainManu : MonoBehaviour {
 
     public void PlayGame()
     {
-        if (OptionMenu.DropValue == 0)
-        {
-
-        }
-        else if (OptionMenu.DropValue == 1)
-        {
-            SceneManager.LoadScene("TwoPlayer");
-        }
-        else if (OptionMenu.DropValue == 2)
-        {
-
-        }
-        else
-        {
-
-        }
-            //SceneManager.LoadScene("TwoPlayer");
-            //float number = FindObjectOfType<OptionMenu>().num();
-            Debug.Log(OptionMenu.DropValue);
+        SceneManager.LoadScene("TwoPlayer",LoadSceneMode.Single);
         
     }
 
